@@ -46,7 +46,7 @@ class FullScheduleFragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
         recyclerView = binding.recyclerView
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        val busStopAdapter = BusStopAdapter({
+        val busStopAdapter = BusStopListAdapter({
             val action = FullScheduleFragmentDirections.actionFullScheduleFragmentToStopScheduleFragment(
                 stopName = it.stopName
             )

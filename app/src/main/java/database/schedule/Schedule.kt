@@ -1,7 +1,10 @@
-package database.schedule
+//package database.schedule
+package com.example.busschedule.database.schedule
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
+import androidx.annotation.NonNull
+import androidx.room.PrimaryKey
 
 @Entity
 data class Schedule(

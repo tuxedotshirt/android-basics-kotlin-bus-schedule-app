@@ -1,6 +1,17 @@
 package com.example.busschedule
 
-class BusStopAdapter(private val onItemClicked: (Schedule) -> Unit) : ListAdapter<Schedule, BusStopAdapter.BusStopViewHolder>(DiffCallback) {
+import android.annotation.SuppressLint
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.recyclerview.widget.ListAdapter
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.RecyclerView
+import com.example.busschedule.database.schedule.Schedule
+import com.example.busschedule.databinding.BusStopItemBinding
+import java.text.SimpleDateFormat
+import java.util.Date
+
+class BusStopListAdapter(private val onItemClicked: (Schedule) -> Unit) : ListAdapter<Schedule, BusStopListAdapter.BusStopViewHolder>(DiffCallback) {
 
     class BusStopViewHolder(private var binding: BusStopItemBinding): RecyclerView.ViewHolder(binding.root) {
         @SuppressLint("SimpleDateFormat")

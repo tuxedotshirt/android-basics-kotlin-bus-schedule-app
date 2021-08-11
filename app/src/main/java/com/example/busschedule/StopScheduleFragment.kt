@@ -60,7 +60,7 @@ class StopScheduleFragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
         recyclerView = binding.recyclerView
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        val busStopAdapter = BusStopAdapter({})
+        val busStopAdapter = BusStopListAdapter({})
         recyclerView.adapter = busStopAdapter
         busStopAdapter.submitList(viewModel.scheduleForStopName())
     }
