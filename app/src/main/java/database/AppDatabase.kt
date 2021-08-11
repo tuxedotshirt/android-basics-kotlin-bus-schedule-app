@@ -1,5 +1,6 @@
-package database
+package com.example.busschedule.database
 
+@Database(entities = arrayOf(Schedule::class), version = 1)
 abstract class AppDatabase: RoomDatabase() {
 
 
@@ -20,7 +21,5 @@ abstract class AppDatabase: RoomDatabase() {
                 instance
             }
         }
-
-        @Database(entities = arrayOf(Schedule::class), version = 1)
     }
 }

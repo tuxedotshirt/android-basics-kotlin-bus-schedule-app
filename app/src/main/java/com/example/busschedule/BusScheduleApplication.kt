@@ -1,6 +1,7 @@
 package com.example.busschedule
 
-import database.schedule.AppDatabase
+import database.database.AppDatabase
+import android.app.Application
 
 class BusScheduleApplication : Application() {
 
