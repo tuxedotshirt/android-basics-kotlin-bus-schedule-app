@@ -1,4 +1,4 @@
-package database.schedule
+package database
 
 abstract class AppDatabase: RoomDatabase() {
 
