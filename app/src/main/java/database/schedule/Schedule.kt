@@ -1,3 +1,5 @@
+package database.schedule
+
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 
